@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:8000/api",
+        target: "https://merntask-tut0wabh.b4a.run/api",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
